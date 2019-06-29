@@ -14,9 +14,17 @@ font-align:center;
 
 <a href = '#' onClick='alertfunct()'>
 click for alert </a>
+<br>
+Enter text: <input type="text" id="t1" value = "whatever">
+<button onClick="echo_text(document.getElementById('t1').value)">entered:</button>
 
-<script src="jspract.js">
+<p id="jstxt"></p>
 
-</script>	
+<script src="jspract.js"></script>
+
+<script>
+document.getElementById('jstxt').innerHTML = text_to_print();
+</script>
+
 </body>
 </html> 
