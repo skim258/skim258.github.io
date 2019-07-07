@@ -8,3 +8,7 @@ function text_to_print(){
 	let txt = "This is an example text";
 	return txt;
 }
+var sayhi = function(){
+	console.log(" say hi");
+}
+sayhi
