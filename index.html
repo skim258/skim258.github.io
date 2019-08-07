@@ -14,6 +14,12 @@ a:visited { color: rgb(254, 39, 46) } /* for visited links */
 a:hover { color: rgb(233, 254, 39) } /* when mouse is over link */
 a:active { color: rgb(39, 204, 254) } /* when link is clicked */
 
+li a{
+	display:block;
+	width:200px;
+	background-color: #dddddd;
+} 
+
 .myclass{
 color: rgb(34, 166, 175);
 }
@@ -73,10 +79,10 @@ reduce the amount of code we are writing <br><span style="font-style:italic">bec
 
 <form>
   First name:<br>
-  <input type="text" name="firstname"><br>
+  <input type="text" id="firstname"><br>
   Last name:<br>
-  <input type="text" name="lastname">
-  <input type="submit" value="Submit">
+  <input type="text" id="lastname">
+  <button type="button" onclick="outputname()">click</button>
 </form>
 
 <pre>
@@ -100,9 +106,20 @@ reduce the amount of code we are writing <br><span style="font-style:italic">bec
 <ol style="list-style-type:upper-roman;" start="2">
 	<li><a href = "alt.html" target = "_blank"> link to another page</a></li>
 	<li><a href = "jspract.html" target = "_blank"> link to js practice</a></li>
-	<li><a href = "html,css,jsntoes.html" target = "_blank"> link to ntoes</a></li>
+	<li><a href= "img/atmega1284.PNG" target="_blank">link to atmega1284 pinout</a></li>
 </ol>
 
+<!--BIG BLOCK OF SPACE-->
+<textarea rows="20" cols="50"> This is empty space</textarea>
 
+<script src="jspract.js"></script>
+<script>
+function outputname(){
+if(firstname.value != "" || lastname.value != ""){
+console.log(firstname.value);
+console.log(lastname.value);
+}
+}
+</script>
 
 </html>

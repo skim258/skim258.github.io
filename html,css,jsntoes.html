@@ -4,8 +4,11 @@
 notes
 </title>
 
-<style>
-
+<style> 
+#subhead{
+font-style:italic;
+color:blue;
+}
 </style>
 <body>
 
@@ -16,7 +19,7 @@ notes
 <pre id="spanning text">
 <mark>&lt;span&gt;&lt;/span&gt; to span particular text</mark>
 
-property:			use (syntax: property-use)
+property:			use (syntax: style="property:use")
 text-decoration		underline, overline, line-thorugh,blink none
 
 font-style			normal,italic,oblique
@@ -44,5 +47,26 @@ To top of page:
 	<a href="#ToT"><img src="img/uparrow.png" width="50" height="30"></a>
 </pre>
 
+<pre>
+<p id="subhead">map and area tags</p>
+syntax: &ltmap name = "mapname"&gt
+	&ltarea shape=" " " coords=" " href=" "&gt
+	&lt/map&gt
+coords syntax: <img src="img/attributes/areaCoord.png" height="150" width="2*height" usemap="#coordmap">
+
+<map name = "coordmap">
+	<area shape="rect" alt ="rectangle" coords="3,157,62,156" href="img/shapes/rectangle.png" target="_blank">
+	<area shape="circle" alt ="circle" coords="60,167,3" href="img/shapes/circl.png" target="_blank">
+</map>
+</pre>
+
+<pre>
+<span id="subhead">positioning</span>
+relative,absolute,fixed.... 
+</pre>
+
+<pre>
+
+</pre>
 </body>
 </html>
